@@ -1,24 +1,14 @@
 > Refactory-RantikaAyuning-Frontend
 
-## Install
+```sh
+Install
+```
+> npm install / yarn install
 
 ```sh
-npm install / yarn install
+Usage
 ```
+> npm start / yarn start
 
-## Usage
-
-```sh
-npm start / yarn start
-```
-
-## Run tests
-
-```sh
-npm run test
-```
-
-## Author
+> Author
 **- Rantika Ayuning Dewi **
-
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
