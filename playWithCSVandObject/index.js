@@ -7,12 +7,12 @@ Xiaomi Mi 6, Smartphone, 5399000
 LG V30 Plus, Smartphone, 10499000`
 
 const parseCsv = csv => {
-  let lines = csv.split("\n");
+  const lines = csv.split("\n");
   const header = lines.shift().split(", ");
   lines.shift();
   return lines.map(line => {
     const bits = line.split(", ");
-    let obj = {};
+    const obj = {};
     header.forEach((h, i) => obj[h] = bits[i]);
     return obj;
   })
@@ -28,8 +28,15 @@ const result = electronics.map(item => {
 })
 
 function sortElectronicsObject(list) {
-    let obj = list.sort((a, b) => a.price-b.price);
-    return obj;
+    const obj = list.sort((a, b) => a.price-b.price);
+    const newObj = [...obj].map(item => {
+      return {
+        name: item.name,
+        price: new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR' }).format(item.price),
+        category: item.category
+      }
+    })
+    return newObj;
 }
 
 console.log(sortElectronicsObject(result));
