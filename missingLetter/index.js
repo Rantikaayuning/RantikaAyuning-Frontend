@@ -1,15 +1,10 @@
 const list_letters_first = ["c","d","e","g","h"];
 const list_letters_second = ["X","Z"];
 
-function missingLetter(str) {
-    let letter = "abcdefghijklmnopqrstuvwxyz";
-    let start = letter.indexOf(str[0].toLowerCase());
-
-    for (let i = 0; i <= str.length; i++) {
-        if (str[i].toLowerCase() !== letter[start + i]) {
-            return letter[start + i];
-        }
-    }
+function missingLetter(array) {
+    const alphabet = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+    const start = alphabet.indexOf(array[0]);
+    return alphabet.slice(start, start + array.length).find(element => !array.includes(element));
 }
 
 missingLetter(list_letters_first);
