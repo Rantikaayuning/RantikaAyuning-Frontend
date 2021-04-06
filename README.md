@@ -1,14 +1,15 @@
 > Refactory-RantikaAyuning-Frontend
 
+> Install
 ```sh
-Install
+npm install / yarn install
 ```
-> npm install / yarn install
 
+> Usage
 ```sh
-Usage
+npm start / yarn start
 ```
-> npm start / yarn start
-
 > Author
+```sh
 **- Rantika Ayuning Dewi **
+```
