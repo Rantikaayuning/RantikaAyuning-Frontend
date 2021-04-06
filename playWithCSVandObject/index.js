@@ -27,9 +27,9 @@ const result = electronics.map(item => {
   }
 })
 
-function sortAssocObject(list) {
-    let numberObj = list.sort((a, b) => a.price-b.price);
-    return numberObj;
+function sortElectronicsObject(list) {
+    let obj = list.sort((a, b) => a.price-b.price);
+    return obj;
 }
 
-console.log(sortAssocObject(result));
+console.log(sortElectronicsObject(result));
