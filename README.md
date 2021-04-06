@@ -1,7 +1,5 @@
 # Refactory-RantikaAyuning-Frontend
 
-> Refactory-RantikaAyuning-Frontend
-
 ## Install
 
 ```sh
