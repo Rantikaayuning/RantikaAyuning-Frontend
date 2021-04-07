@@ -36,7 +36,7 @@ function sortElectronicsObject(list) {
         category: item.category
       }
     })
-    return newObj;
+    return console.log(newObj);
 }
 
-console.log(sortElectronicsObject(result));
+sortElectronicsObject(result);

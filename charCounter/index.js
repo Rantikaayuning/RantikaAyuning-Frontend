@@ -3,8 +3,8 @@ const text_2 = "Bruiser build";
 
 const charCounter = (string) => {
     result = {};
-    string.toLowerCase().split('').forEach(element => result[element] = (result[element] || '*' ) + '*');
-    return result;
+    string.toLowerCase().split('').forEach(element => result[element] = (result[element] || '') + '*');
+    return console.log(result);
 }
 
 charCounter(text_1);

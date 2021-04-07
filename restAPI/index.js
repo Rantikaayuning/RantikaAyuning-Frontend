@@ -17,10 +17,10 @@ async function getUsersandPosts() {
         .then(res=> res);
     }
 
-    arrayResult = [], postsObj = [];
+    arrayResult = []
     for (let x in users)    
     for (let n in posts){
-        if (typeof postsObj[posts[n].id] == 'undefined') {
+        if (posts[n].userId == users[x].id) {
             arrayResult.push({...posts[n], user : {
                 ...users[x]
             }});

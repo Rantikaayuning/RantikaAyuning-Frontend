@@ -1,19 +1,19 @@
-// Number from 0 until 1000
+// Numbers from 0 until 1000
 const numbers = Array.from(Array(1000).keys());
 
 // Odd numbers
 const oddNumbers = (number) => {
-    return number.filter(a => a % 2 === 1);
+    return console.log(number.filter(a => a % 2 === 1));
 }
 
 // Even numbers
 const evenNumbers = (number) => {
-    return number.filter(a => a % 2 === 0);
+    return console.log(number.filter(a => a % 2 === 0));
 }
 
 // Multiplies by 5
 const multipliesByFive = (number) => {
-    return number.filter(a => a % 5 === 0 && a !== 0);
+    return console.log(number.filter(a => a % 5 === 0 && a !== 0));
 }
 
 // Prime numbers
@@ -32,7 +32,7 @@ function primeNumbers(n) {
             arr.push(i);
         }
     }
-    return arr;
+    return console.log(arr);
 }
 
 // Prime numbers under 100
@@ -51,9 +51,10 @@ function primeNumbersLimit(n) {
             arr.push(i);
         }
     }
-    return arr;
+    return console.log(arr);
 }
 
+console.log(numbers)
 oddNumbers(numbers);
 evenNumbers(numbers);
 multipliesByFive(numbers);

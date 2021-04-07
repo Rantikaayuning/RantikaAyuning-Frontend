@@ -4,7 +4,7 @@ const list_letters_second = ["X","Z"];
 function missingLetter(array) {
     const alphabet = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
     const start = alphabet.indexOf(array[0]);
-    return alphabet.slice(start, start + array.length).find(element => !array.includes(element));
+    return console.log(alphabet.slice(start, start + array.length).find(element => !array.includes(element)));
 }
 
 missingLetter(list_letters_first);

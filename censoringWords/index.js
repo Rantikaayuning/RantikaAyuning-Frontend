@@ -25,7 +25,7 @@ const censoringWords = (string) => {
         let x = arrWords.indexOf('laborum.');
         arrWords.splice(x, 1, '*******.');
     }  
-    return arrWords.join(' ');
+    return console.log(arrWords.join(' '));
 }
 
 censoringWords(paragraph);
