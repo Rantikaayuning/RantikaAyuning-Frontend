@@ -1,4 +1,5 @@
 const fetch = require('node-fetch');
+const { callbackify } = require('node:util');
 
 async function getUsersandPosts() {
     // JSON Object Users
